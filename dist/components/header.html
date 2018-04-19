@@ -1,0 +1,53 @@
+<div class="navbar-fixed" ng-controller="headerController">
+    <nav class="red darken-1">
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo center"><img src="imgs/logo.png" alt=""></a>
+            <a href="#mobile-sidenav" class="sidenav-trigger button-collapse" ng-click="toggleMobileMenu()"><i
+                    class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="index.html"><i class="material-icons left">home</i> Início</a></li>
+                <li><a href="#!"><i class="material-icons left">fiber_new</i> Novidades</a></li>
+                <li><a href="#!"><i class="material-icons left">account_circle</i> Minha Conta</a></li>
+            </ul>
+
+            <ul class="right">
+                <li><a href="#" ng-click="toggleCarrinho()"><i class="material-icons left">shopping_cart</i>
+                    Carrinho</a></li>
+            </ul>
+
+            <form class="right hide-on-med-and-down">
+                <div class="input-field white-text">
+                    <input id="searchNavBar" type="search" placeholder="O que procura?" required>
+                    <label class="label-icon" for="searchNavBar"><i class="material-icons">search</i></label>
+                    <i class="material-icons">close</i>
+                </div>
+            </form>
+        </div>
+    </nav>
+</div>
+
+<ul id="sidenav-carrinho" class="sidenav">
+    <li>
+        <h6 class="center">Carrinho</h6>
+    </li>
+    <li>
+        <div class="divider"></div>
+    <li>
+    <li class="col s12">
+    <fieldset class="center">
+        <legend class="truncate" style="max-width: 225px;">Nome jogo grande para caraio ainda nao foi mds do ceu</legend>
+        <img src="http://materializecss.com/images/sample-1.jpg" class="responsive-img" alt="">
+        <p class="yellow-text text-darken-4" style="margin: 0">R$ 250,00</p>
+        <a href="#">Remover produto</a>
+    </fieldset>
+    </li>
+</ul>
+
+<ul class="sidenav" id="mobile-sidenav">
+    <li><a href="index.html"><i class="material-icons left">home</i> Início</a></li>
+    <li class="divider"></li>
+    <li><a href="#!"><i class="material-icons left">fiber_new</i> Novidades</a></li>
+    <li class="divider"></li>
+    <li><a href="#!"><i class="material-icons left">account_circle</i> Minha Conta</a></li>
+    <li class="divider"></li>
+</ul>
