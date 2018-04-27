@@ -6,8 +6,8 @@
                     class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="left hide-on-med-and-down">
                 <li><a href="index.html"><i class="material-icons left">home</i> Início</a></li>
-                <li><a href="#!"><i class="material-icons left">fiber_new</i> Novidades</a></li>
-                <li><a href="#!"><i class="material-icons left">account_circle</i> Minha Conta</a></li>
+                <li><a href="novidades.html"><i class="material-icons left">fiber_new</i> Novidades</a></li>
+                <li><a href="login.html"><i class="material-icons left">account_circle</i> Minha Conta</a></li>
             </ul>
 
             <ul class="right">
@@ -26,23 +26,6 @@
     </nav>
 </div>
 
-<ul id="sidenav-carrinho" class="sidenav">
-    <li>
-        <h6 class="center">Carrinho</h6>
-    </li>
-    <li>
-        <div class="divider"></div>
-    <li>
-    <li class="col s12">
-    <fieldset class="center">
-        <legend class="truncate" style="max-width: 225px;">Nome jogo grande para caraio ainda nao foi mds do ceu</legend>
-        <img src="http://materializecss.com/images/sample-1.jpg" class="responsive-img" alt="">
-        <p class="yellow-text text-darken-4" style="margin: 0">R$ 250,00</p>
-        <a href="#">Remover produto</a>
-    </fieldset>
-    </li>
-</ul>
-
 <ul class="sidenav" id="mobile-sidenav">
     <li><a href="index.html"><i class="material-icons left">home</i> Início</a></li>
     <li class="divider"></li>
@@ -51,3 +34,5 @@
     <li><a href="#!"><i class="material-icons left">account_circle</i> Minha Conta</a></li>
     <li class="divider"></li>
 </ul>
+
+<div ng-include="'components/cart-sidenav.html'"></div>

@@ -100,7 +100,7 @@
     <br>
 </ul>
 
-<main class="index-main">
+<main class="index-main" ng-controller="cartController">
     <div class="row">
         <div class="col s12 hide-on-large-only hide-on-extra-large-only" style="margin: 11px 0">
             <a href="#" class="btn blue-grey" ng-click="toggleFiltro()"><i class="material-icons left">filter_list</i>Exibir Filtros</a>
@@ -112,8 +112,11 @@
                     <div class="card-image">
                         <img ng-src="{{destaques[0].imagem}}">
                         <span class="card-title">{{destaques[0].nome}}</span>
-                        <a href="cart.html" class="btn-floating halfway-fab waves-effect waves-light red tooltipped"><i
-                                class="material-icons">add_shopping_cart</i></a>
+                        <a href="javascript:void(0);"
+                           class="btn-floating halfway-fab waves-effect waves-light red tooltipped"
+                            ng-click="adicionarCarrinho(destaques[0].id, destaques[0].nome, destaques[0].valor, destaques[0].imagem)">
+                                <i class="material-icons">add_shopping_cart</i>
+                        </a>
                         <a href="show.html" class="btn-floating halfway-fab waves-effect waves-light card-btn-detail"><i
                                 class="material-icons">pageview</i></a>
                     </div>
@@ -166,7 +169,7 @@
                 <div class="card-image">
                     <img ng-src="{{produto.imagem}}">
                     <span class="card-title">{{produto.nome}}</span>
-                    <a href="cart.html" class="btn-floating halfway-fab waves-effect waves-light red tooltipped"><i
+                    <a href="javascript:void(0);" class="btn-floating halfway-fab waves-effect waves-light red tooltipped" ng-click="adicionarCarrinho(produto.id, produto.nome, produto.valor, produto.imagem)"><i
                             class="material-icons">add_shopping_cart</i></a>
                     <a href="show.html" class="btn-floating halfway-fab waves-effect waves-light card-btn-detail"><i
                             class="material-icons">pageview</i></a>
@@ -184,6 +187,7 @@
 <script src="js/all.js"></script>
 <script>
     $('select').formSelect();
+    $('footer').addClass('index-main');
 </script>
 </body>
 </html>

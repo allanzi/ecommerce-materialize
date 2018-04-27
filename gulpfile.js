@@ -5,6 +5,7 @@ var browserSync = require('browser-sync').create();
 var scripts = [
     './node_modules/jquery/dist/jquery.js',
     './node_modules/angular/angular.js',
+    './node_modules/angular-cookies/angular-cookies.js',
     './node_modules/angular-sanitize/angular-sanitize.js',
     './node_modules/materialize-css/dist/js/materialize.js',
     './src/js/*.js'
